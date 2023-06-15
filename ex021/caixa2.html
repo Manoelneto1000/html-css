@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0%;
+        }
+        nav{
+            background-color: lightgrey;
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+        }
+        nav > a {
+            text-decoration: none;
+            color: rgb(93, 7, 206);
+            font-weight: bold;
+            margin-right: 0px;
+        }
+        nav > a:hover{
+            color: blue;
+            text-decoration: underline red;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 0px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        article{
+            background-color: lightgrey;
+        }
+        article > aside{
+            background-color: rgb(145, 143, 143);
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div></div><!--Box Level-->
+    <span></span><!--In Line Level-->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Manoel Neto</a>
+            <a href="#">Quem somos</a>
+            <a href="#">História</a>
+            <a href="#">Outros</a>
+            <a href="#">Redes Sociais</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+            <P>Esportes, Política e Tecnologia</P>
+        </section>
+        <section id="Notícias">
+            <article>
+                <h2>Notícia sobre o Brail</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At cumque, tempora soluta explicabo voluptate debitis eaque facere laborum autem iusto veniam atque consectetur excepturi ab? Cupiditate voluptatem eligendi blanditiis praesentium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem harum voluptatibus pariatur repellendus praesentium maxime quia odit dignissimos laborum ullam, magnam quisquam suscipit tempora amet nulla nihil cupiditate vitae iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ipsa doloribus! Sit suscipit voluptates, quo enim dolorem unde quia temporibus autem maxime mollitia? Molestiae, totam voluptate velit recusandae non at.</p>
+                <aside>
+                    <p>Arquigo escrito por José da Silva</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em Vídeo</p>
+    </footer>
+</body>
+</html>
