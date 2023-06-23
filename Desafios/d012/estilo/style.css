@@ -1,4 +1,67 @@
 @charset "UTF-8";
-body{
-    background-color: pink;
-}
+
+/* Reset das configurações padrão dos navegadores */
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html, body{
+        min-height: 100vh;  /* Tamanho mínimo da View Height */
+        background-color: darkgray;
+    }
+
+    header{
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    header > h1{
+        padding-top: 50px;
+        /* text-transform: uppercase; */  /* Transforma as letras em Maiuscula */
+        font-variant: small-caps;
+    }
+
+    header > p{
+        padding-bottom: 50px;
+    }
+
+    header a, footer a{
+        color: white;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    header a:hover, footer a:hover{
+        text-decoration: underline;
+    }
+
+    section.normal{/* O ponto após a tag significa a seleção da classe */
+        background-color: white;
+        color: black;
+    }
+
+    section{
+        padding-top: 10vh; /* cria um espaço de 10% da view height */
+        padding-bottom: 10vh;
+        line-height: 2em; /* Calcula a altura da linha */
+        padding-left: 30px;
+    }
+
+    section.imagem{
+        background-color: rgb(51, 51, 51);
+        color: white;
+    }
+
+    section.imagem p{
+        width: 400px;
+        background-color: rgba(0, 0, 0, 0.204);
+    }
+
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
