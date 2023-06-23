@@ -4,16 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border: 1px solid black; /* Faz uma borda em volta da tabela */
+            width: 400px;
+            text-align: center;
+            border-collapse: separate; /* collapse retira os espaços */
+        }
+        td, th{
+            border: 1px solid black; /* Faz uma borda em volta da tabela */
+            padding: 8px;
+        }
+        tr.linha{ /* Referencia a classe LINHA */
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
     <h1>Minha primeira tabela</h1>
     <table>
+        <tR>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tR>
         <tr>
             <td>A1</td>
             <TD>B1</TD>
             <td>C1</td>
         </tr>
-        <tr>
+        <tr class="linha">
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
